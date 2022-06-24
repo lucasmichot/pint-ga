@@ -1,5 +1,7 @@
 # GitHub Action for Laravel Pint
 
+This GitHub action allows you to fix your code using https://github.com/laravel/pint in one of your workflow.
+
 ## Usage
 
 You can use it as a GitHub Action like this:
@@ -25,7 +27,7 @@ jobs:
         uses: docker://laravel/pint-github-action
 ```
 
-_To use a custom config, e.g. `--preset` or `--config` options:_
+_To use specific CLI parameters, e.g. `--preset` or `--config` options:_
 
 ```diff
 # .github/workflows/lint.yml
