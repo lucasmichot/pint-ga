@@ -1,6 +1,6 @@
 # GitHub Action for Laravel Pint
 
-This GitHub action allows you to check your code using https://github.com/laravel/pint in one of your workflows.
+This GitHub action allows you to check your code using https://github.com/laravel/pint in one of the repository's workflows.
 
 ## Usage
 
