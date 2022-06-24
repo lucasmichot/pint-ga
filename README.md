@@ -24,7 +24,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Lint with Laravel Pint
-        uses: docker://laravel/pint-github-action
+        uses: docker://laravel/pint-ga
 ```
 
 _To use specific CLI parameters, e.g. `--preset` or `--config` options:_
@@ -47,17 +47,17 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Lint with Laravel Pint
-        uses: docker://laravel/pint-github-action
+        uses: docker://laravel/pint-ga
 +       with:
 +         args: --config=vendor/my-company/coding-style/pint.json --preset laravel
 ```
 
 ## Docker
 
-A Docker image is built automatically and located here at https://hub.docker.com/r/laravel/pint-github-action
+A Docker image is built automatically and located here at https://hub.docker.com/r/laravel/pint-ga
 
 You can run it in any given directory like this:
 
 ```sh
-docker run --rm -it -w=/app -v ${PWD}:/app laravel/pint-github-action:latest
+docker run --rm -it -w=/app -v ${PWD}:/app laravel/pint-ga:latest
 ```

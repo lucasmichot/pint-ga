@@ -1,13 +1,13 @@
-author: 'lucasmichot'
+author: 'laravel'
 
 branding:
   icon: 'check'
   color: 'green'
 
-description: 'Use Laravel Pint within a Github action.'
+description: 'Use Laravel Pint within a GitHub action.'
 
 name: 'Laravel-Pint'
 
 runs:
   using: 'docker'
-  image: 'docker://laravel/pint-github-action:0.1.8'
+  image: 'docker://laravel/pint-ga:0.1.8'
